@@ -1,0 +1,82 @@
+.homepage-container {
+	position: fixed;
+}
+
+.homepage-greeting-container {
+	top: 33vh;
+	left: 2.2778vw;
+	position: fixed;
+}
+
+.homepage-greeting {
+	position: relative;
+	font-size: 4vw;
+	font-weight: bold;
+
+}
+
+.typing-cursor {
+	border-right: .05em solid white;
+	padding-right: 1vw;
+}
+
+.typing-cursor-animation {
+	animation:
+		blink-caret .75s step-end infinite;
+}
+
+.homepage-briefing {
+	position: relative;
+	padding-top: 3vh;
+	padding-right: 1vw;
+	/*top: 45vh;
+	left: 1.8778vw;*/
+	font-size: 1.5vw;
+	font-weight: lighter;
+	/*opacity: 0;*/
+}
+
+.relative-container {
+	position: relative;
+}
+
+.typing-animation {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .05em solid white; /* The typwriter cursor */
+  padding-right: 1vw;
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  /*letter-spacing: .15em; */
+  animation:
+    typing 1.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+.typing-animation-2 {
+	overflow: hidden;
+	/*border-right: .05em solid white;*/
+	white-space: nowrap;
+	margin: 0 auto;
+	animation:
+		appear 0.5s,
+		typing 2.5s steps(40, end);
+	animation-fill-mode: both;
+	animation-delay: 2s;
+}
+
+@keyframes appear {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 50%}
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}

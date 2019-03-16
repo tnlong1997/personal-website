@@ -1,0 +1,35 @@
+.navheader-container {
+	color: white;
+	position: fixed;
+	/*height: 6%;*/
+	/*height: 100vw;*/
+	/*width: 100vw;*/
+	z-index: 800;
+}
+
+.navheader-icon-nickname {
+	top: 1.8vw;
+	left: 1.7778vw;
+	position: fixed;
+	font-size: 18pt;
+}
+
+.navheader-nickname {
+	width: 40%;
+	height: 40%;
+}
+
+.navheader-nav-ul {
+	top: 1vw;
+	right: 1.7778vw;
+	position: fixed;
+	/*display: inline;*/
+	list-style-type: none;
+}
+
+.navheader-nav-li {
+	font-size: 16pt;
+	display: inline;
+	padding: 10px;
+	font-weight: lighter;
+}
